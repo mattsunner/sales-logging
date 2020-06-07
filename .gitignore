@@ -1,2 +1,8 @@
 # venv
 sales/
+
+# Other
+.DS_Store
+
+# Workbooks
+workbooks/
