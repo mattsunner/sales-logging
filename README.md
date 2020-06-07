@@ -40,7 +40,7 @@ To use this script, follow the steps outlined below:
 4. Update the naming convention in `wb.save()` if desired
 5. Run the application
 
-   python app.py
+   `python app.py`
 
 ## Questions
 
