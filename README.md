@@ -38,7 +38,8 @@ To use this script, follow the steps outlined below:
 
 3. Update the `sample_txt` path with the txt file you intend to use
 4. Update the naming convention in `wb.save()` if desired
-5. Run the application
+5. Update/Add variables as needed for the given use case. Then update the locations in the workbook function accordingly.
+6. Run the application
 
    `python app.py`
 
