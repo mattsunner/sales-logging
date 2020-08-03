@@ -6,15 +6,18 @@ Author: Matthew Sunner, 2020
 
 # Imports
 from openpyxl import Workbook, load_workbook
-
+from datetime import date
 
 def salesLogging():
     # Import sample list
     sample_txt = open('sample.txt', 'r')
 
-    # Iterate through list and add each item to an array
+    # Variables 
     sales_items = []
+    today = date.today()
+    author = str(input("Enter Your Name: "))
 
+    # Iterate through list and add each item to an array
     for line in sample_txt:
         sales_items.append(line.strip())
 
@@ -23,6 +26,8 @@ def salesLogging():
         wb = load_workbook('original.xlsx')
         ws = wb.active
         ws['B3'] = item
+        ws['B4'] = today
+        ws['B5'] = author
         wb.save(f'workbooks/Sales-Log-{item}.xlsx')
         wb.close()
 
